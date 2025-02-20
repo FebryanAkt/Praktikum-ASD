@@ -28,6 +28,9 @@ public class MataKuliah10 {
     void kurangiJam(int jam) {
         if (jumlahJam > jam) {
             jumlahJam -= jam;
-        } 
+            System.out.println("Pengurangan jam berhasil, jumlah jam sekarang " + jumlahJam);
+        } else {
+            System.out.println("Pengurangan jam tidak bisa dilakukan, jam yang tersedia hanya "+ jumlahJam);
+        }   
     }
 }
