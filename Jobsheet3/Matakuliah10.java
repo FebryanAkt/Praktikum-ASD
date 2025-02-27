@@ -23,4 +23,11 @@ public class Matakuliah10 {
         this.jumlahJam = sc.nextInt();
         System.out.println("--------------------------");
     }
+    void cetakInfo() {
+        System.out.println("Kode        :"+ this.kode);
+        System.out.println("Nama        :"+ this.nama);
+        System.out.println("SKS         :"+ this.sks);
+        System.out.println("Jumlah Jam  :"+ this.jumlahJam);
+        System.out.println("--------------------------");
+    }
 }
