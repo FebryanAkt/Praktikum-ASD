@@ -27,4 +27,17 @@ public class Sorting10 {
         }
         System.out.println();
     }
+    void SelectionSort(){
+        for (int i = 0; i < jumData; i++) {
+            int min = i;
+            for (int j =i; j < jumData; j++) {
+                if (data[j] < data[min]) {
+                    min = j;
+                }
+            }
+            int temp = data [i];
+            data[i] = data [min];
+            data[min] = temp;
+        }
+    }
 }
