@@ -1,10 +1,13 @@
 import java.util.Scanner;
 public class MahasiswaDemo10 {
     public static void main(String[] args) {
-        MahasiswaBerprestasi10 list = new MahasiswaBerprestasi10();
         Scanner sc = new Scanner(System.in);
-        int jumlahMhs = 5;
-
+        
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMhs = sc.nextInt();
+        sc.nextLine();
+        
+        MahasiswaBerprestasi10 list = new MahasiswaBerprestasi10(jumlahMhs);
         for (int i = 0; i < jumlahMhs; i++) {
             System.out.println("Masukkan data mahasiswa ke-" + (i + 1));
             System.out.print("NIM: ");
