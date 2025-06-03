@@ -1,6 +1,5 @@
 import java.util.Scanner;
 public class DLLMain10 {
-
     public static Mahasiswa10 inputMahasiswa(Scanner scan){
         System.out.print("Masukkan NIM: ");
         String nim = scan.nextLine();
@@ -41,8 +40,8 @@ public class DLLMain10 {
                     Mahasiswa10 mhs = inputMahasiswa(scan);
                     list.addLast(mhs);
                 }
-                case 3 -> list.removeFirst();
-                case 4 -> list.removeLast();
+                // case 3 -> list.removeFirst();
+                // case 4 -> list.removeLast();
                 case 5 -> list.print();
                 case 6 -> {
                     scan.nextLine(); 
@@ -60,6 +59,6 @@ public class DLLMain10 {
                 default -> System.out.println("Pilihan tidak valid!");
             }
         } while (pilihan != 0);
-        scan.close();
     }
+
 }
